@@ -1,3 +1,11 @@
 **DEVELOPMENT**
 
-This is the repository for development.
+This is the repository for development
+======================================
+
+Please specify the extension of the temp files in .gitignore
+
+Create a separate folder/repo for each project.
+
+
+
