@@ -1,2 +1,6 @@
 #ext of files to be ignored by GIT
 .tmp
+.aux
+.idx
+.shl
+.toc
