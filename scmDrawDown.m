@@ -25,9 +25,9 @@ function vargout = scmDrawDown(data,varargin)
 %% ---------
 % read options in struct
 opt = optParse(varargin);
-% ?validate options, give warning/error messages
 
-% ?if some necessary options are missing, make default assumptions for options
+
+% Default assumptions for options
 % eg: 
 %   range: compute the drawdowns of data in a certain time range, if it is
 %       missing, compute the entire range
