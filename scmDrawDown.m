@@ -1,4 +1,4 @@
-function vargout = scmDrawDown(data,varargin)
+function [maxDrawdownRatio,secondMaxDrawdownRatio,thirdMaxDrawdownRatio,thDayMax,thDaySecond,thDayThird,countDayMax,countDaySecond,countDayThird] = scmDrawDown(data)
 
 %% Help file
 % comply to Matlab help file for the format
@@ -80,8 +80,7 @@ countDayThird=thDayThird-find(portfolioValue==max(portfolioValue(1:thDayThird)))
 
 %% Output
 % what is the output class: same as the input class
-% how many outputs: default 1, the maximum drawdown, if input is price,
-%   output is price, if input is return, output is in returns
+% how many outputs: The Largest,2nd Largest,3rd Largest Drawdowns, When the three drawdown happened, How long the three drawdown lasted
 % if need the length and time of the drawdowns: also save the corresponding
 %   time stamp
 
