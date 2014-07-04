@@ -10,7 +10,7 @@ function vargout = scmDrawDown(data,varargin)
 % 
 % Input
 % data is a n-by-m matrix/time series/ financial time series 
-%
+% assuming the 1st column is the End-of-Day Portfolio Value
 % Options
 % 
 % Output
@@ -40,15 +40,16 @@ opt = optParse(varargin);
 
 %% Data Validation
 % ?what need to be checked for the data
-% what is the frequency?
-% what if some data is missing?
-% what is the class of the data (ts, fints, matrix)
-% what is the dimension of the data
-% etc...
+% The Frequency is Daily.
+% The class of the data is a n-by-m matrix,assuming the End-of-Day portfolio value is in the first column.
+
+
 
 
 
 %% Computation
+portfolioValue=data(:,1);
+
 
 len=numel(portfolioValue);
 drawdownRatio=zeros(len,1);
