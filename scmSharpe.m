@@ -76,6 +76,4 @@ Sharpe_Ratio=(annualizedReturn-0.033)/annualizedStdev;
 %% Output
 % what is the output class: same as the input class
 % one output: the sharpe ratio for the portfolio for the holding period
-% if need the length and time of the drawdowns: also save the corresponding
-%   time stamp
- 
+
